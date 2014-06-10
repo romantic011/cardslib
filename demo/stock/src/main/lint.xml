@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/it/gmariotti/cardslib/demo/cards/GoogleNowBirthCard.java" />
+        <ignore path="src/it/gmariotti/cardslib/demo/fragment/DismissAnimFragment.java" />
+        <ignore path="src/it/gmariotti/cardslib/demo/fragment/MiscCardFragment.java" />
+    </issue>
+</lint>
