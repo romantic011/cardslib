@@ -1,4 +1,4 @@
-
+apply plugin: 'android-sdk-manager'
 apply plugin: 'android'
 
 repositories {
@@ -27,6 +27,11 @@ android {
             release {
                 signingConfig signingConfigs.release
             }
+        }
+
+        debug {
+            packageNameSuffix ".debug"
+            versionNameSuffix "-debug"
         }
     }
 
