@@ -15,64 +15,56 @@
   ~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~   See the License for the specific language governing permissions and
   ~   limitations under the License.
-  ~  *****************************************************************************
-  -->
+  ~  *****************************************************************************
+-->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:id="@+id/card_main_layout"
         style="@style/card.main_layout"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-
+        android:orientation="vertical" >
 
         <it.gmariotti.cardslib.library.view.component.CardHeaderView
             android:id="@+id/card_header_layout"
             style="@style/card.header_outer_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <RelativeLayout
+            style="@style/card.content_outer_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/card.content_outer_layout">
-
+            android:layout_height="wrap_content" >
 
             <ImageView
                 android:id="@+id/colorBorder"
-                android:background="@drawable/rectangle"
                 android:layout_width="10dp"
-                android:layout_height="@dimen/card_base_empty_height" />
+                android:layout_height="@dimen/card_base_empty_height"
+                android:background="@drawable/rectangle" />
 
             <FrameLayout
                 android:id="@+id/card_main_content_layout"
                 style="@style/card.content_outer_layout"
-                android:layout_toRightOf="@id/colorBorder"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/card_base_empty_height"/>
-
-
+                android:layout_height="@dimen/card_base_empty_height"
+                android:layout_toRightOf="@id/colorBorder" />
         </RelativeLayout>
-
-
-
     </LinearLayout>
 
     <it.gmariotti.cardslib.library.view.component.CardShadowView
         android:id="@+id/card_shadow_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <FrameLayout
         android:id="@+id/card_content_expand_layout"
         style="@style/card.main_contentExpand"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

@@ -8,7 +8,7 @@
 
     <!--
          This is the Inner Frame which you can populate runtime
-         with getInnerView() method in CardHeader class.
+         with getInnerView() method in CardHeader class.
     -->
 
     <FrameLayout
@@ -18,7 +18,7 @@
 
     <!--
          This is the Button Frame.
-         You can custom this behaviour with some methods in CardHeader class
+         You can custom this behaviour with some methods in CardHeader class
     -->
 
     <FrameLayout

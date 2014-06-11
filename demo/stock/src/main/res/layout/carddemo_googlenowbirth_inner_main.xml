@@ -8,7 +8,7 @@
     <!--
          This is the base Inner View inside a CardHeader.
          You can customize it with your layout xml file and your CardHeader.
-         You can popolate your element with CardHeader#setupInnerViewElements() method
+         You can popolate your element with CardHeader#setupInnerViewElements() method
     -->
 
     <TextView
